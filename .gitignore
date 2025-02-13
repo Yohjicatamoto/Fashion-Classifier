@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+.venv
+venv/
+ENV/
+.DS_Store
+.streamlit/secrets.toml
+*.h5
+*.keras
