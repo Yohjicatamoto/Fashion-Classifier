@@ -49,11 +49,11 @@ docker run -p 80:80 fashion-classifier
 The trained model achieves good performance on the Fashion MNIST dataset. Here are the model metrics:
 
 ### Training Results
-![Model Training Results](images/training_results.png)
+![Model Training Results](images/modelloss.png)
 *Model accuracy and loss during training*
 
 ### Model Evaluation
-![Model Confusion Matrix](images/Modelconfusion.png)
+![Model Confusion Matrix](images/modelconfusion.png)
 *Confusion matrix showing model performance across classes*
 
 ### Sample Predictions
