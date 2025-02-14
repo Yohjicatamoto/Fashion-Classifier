@@ -26,6 +26,9 @@ This project implements a Convolutional Neural Network (CNN) to classify fashion
 - NumPy
 - Docker
 
+![Sample Predictions](/ex/1.png)
+![Sample Predictions](/ex/3.png)
+
 ## Quick Start
 
 1. Install dependencies:

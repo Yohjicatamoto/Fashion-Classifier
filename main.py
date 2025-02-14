@@ -3,8 +3,10 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 import os
-
+import pathlib
 # Load model with error handling
+
+
 @st.cache_resource
 def load_model(model_path):
     try:
@@ -33,7 +35,7 @@ def preprocess_image(img):
 # Streamlit App
 st.title('Fashion Item Classifier')
 
-uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
+uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"], key="file")
 
 if uploaded_image is not None:
     image = Image.open(uploaded_image)
@@ -41,10 +43,10 @@ if uploaded_image is not None:
 
     with col1:
         resized_img = image.resize((100, 100))
-        display_image = image.resize((100, 100))
+        display_image = image
         st.image(display_image)
     with col2:
-        if st.button('Classify'):
+        if st.button('Classify', key = "classify"):
             if model is not None:
                 try:
                     with st.spinner('Classifying...'):
