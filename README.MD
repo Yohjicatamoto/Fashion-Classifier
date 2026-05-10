@@ -1,10 +1,10 @@
 # Fashion Item Classifier
 
-A web application that classifies fashion items using a deep learning model trained on the Fashion MNIST dataset. The application is built with Streamlit and TensorFlow.
+A web app that classifies fashion items using a deep learning model trained on the Fashion MNIST dataset. built with Streamlit and TensorFlow.
 
 ## Overview
 
-This project implements a Convolutional Neural Network (CNN) to classify fashion items into 10 different categories:
+This implements a Convolutional Neural Network (CNN) to classify fashion items into 10 different categories:
 
 - T-shirt/top
 - Trouser
